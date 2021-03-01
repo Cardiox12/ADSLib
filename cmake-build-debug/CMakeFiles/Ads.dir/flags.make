@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = @CMakeFiles/Ads.dir/includes_CXX.rsp
+CXX_INCLUDES = 
 

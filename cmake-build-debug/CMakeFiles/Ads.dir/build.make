@@ -77,7 +77,6 @@ include CMakeFiles/Ads.dir/progress.make
 include CMakeFiles/Ads.dir/flags.make
 
 CMakeFiles/Ads.dir/srcs/Ads.cpp.obj: CMakeFiles/Ads.dir/flags.make
-CMakeFiles/Ads.dir/srcs/Ads.cpp.obj: CMakeFiles/Ads.dir/includes_CXX.rsp
 CMakeFiles/Ads.dir/srcs/Ads.cpp.obj: ../srcs/Ads.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cardi\CLionProjects\Ads\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Ads.dir/srcs/Ads.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Ads.dir\srcs\Ads.cpp.obj -c C:\Users\Cardi\CLionProjects\Ads\srcs\Ads.cpp

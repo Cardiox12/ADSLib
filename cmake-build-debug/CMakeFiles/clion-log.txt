@@ -1,8 +1,4 @@
 "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Cardi\CLionProjects\Ads
-CMake Error at CMakeLists.txt:6 (target_link_libraries):
-  Cannot specify link libraries for target "Ads" which is not built by this
-  project.
-
-
--- Configuring incomplete, errors occurred!
-See also "C:/Users/Cardi/CLionProjects/Ads/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Cardi/CLionProjects/Ads/cmake-build-debug
