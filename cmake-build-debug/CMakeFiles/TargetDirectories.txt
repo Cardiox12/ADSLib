@@ -1,0 +1,4 @@
+C:/Users/Cardi/CLionProjects/Ads/cmake-build-debug/CMakeFiles/Ads.dir
+C:/Users/Cardi/CLionProjects/Ads/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Cardi/CLionProjects/Ads/cmake-build-debug/CMakeFiles/main.dir
+C:/Users/Cardi/CLionProjects/Ads/cmake-build-debug/CMakeFiles/rebuild_cache.dir
