@@ -10,7 +10,14 @@ int     main()
     AdsHandler<bool> inHandle{ "MAIN.In" };
     AdsHandler<bool> outHandle{ "MAIN.Out" };
 
-    inHandle.connect();
-    outHandle.connect();
+    try {
+        inHandle.connect();
+        bool in = inHandle.read();
+
+        std::cout << "In : " << in << std::endl;
+    } catch (const AdsHandleFailed &error){
+        std::cout << "Cannot get handle of In variable" << std::endl;
+    }
+
     return (0);
 }

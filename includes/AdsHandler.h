@@ -41,22 +41,18 @@ void AdsHandler<T>::connect(){
 
 //  Get handle by name
 //  The naming convention for ADS Variables are Prog.Varname
-    if ( AdsSyncReadWriteReq(
-            m_connect.pAddr,
-            ADSIGRP_SYM_HNDBYNAME,
-            0x0,
-            sizeof( m_handle ),
-            &m_handle,
-            m_varname.size(),
-            (void*)(m_varname.c_str())
-        ) ){
+    if ( AdsSyncReadWriteReq( m_connect.pAddr, ADSIGRP_SYM_HNDBYNAME, 0x0, sizeof( m_handle ), &m_handle,
+                              m_varname.size(), (void*)(m_varname.c_str()) ) ){
         throw AdsHandleFailed("failed to handle variable");
     }
 }
 
 template<typename T>
 T &AdsHandler<T>::read() {
-    std::cout << "Reading ... " << std::endl;
+
+    if ( AdsSyncReadReq(m_connect.pAddr, ADSIGRP_SYM_VALBYHND, m_handle, sizeof( m_data ), &m_data ) ){
+        throw AdsReadFailed("reading variable from TwinCat3 failed");
+    }
 
     return (m_data);
 }

@@ -36,4 +36,18 @@ public:
     }
 };
 
+class AdsReadFailed : public std::exception {
+    std::string m_message;
+public:
+    explicit AdsReadFailed(const std::string &message){
+        m_message = message;
+        std::cerr << "AdsReadFailed: " << message << std::endl;
+    };
+
+    [[nodiscard]] const char *what() const noexcept override {
+        std::cout << "AdsReadFailed: " << m_message << std::endl;
+        return (m_message.c_str());
+    }
+};
+
 #endif //ADS_EXCEPTION_H
