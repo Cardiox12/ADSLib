@@ -6,8 +6,11 @@
 
 int     main()
 {
-    AdsHandler<bool> handle{ "In" };
+//    Naming convention for ADS Variables is PLC_PROG_NAME.PLC_VARNAME
+    AdsHandler<bool> inHandle{ "MAIN.In" };
+    AdsHandler<bool> outHandle{ "MAIN.Out" };
 
-    handle.connect();
+    inHandle.connect();
+    outHandle.connect();
     return (0);
 }

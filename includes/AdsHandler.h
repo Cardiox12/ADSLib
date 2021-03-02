@@ -39,6 +39,8 @@ void AdsHandler<T>::connect(){
 
     m_connect.pAddr->port = AMSPORT_R0_PLC_TC3;
 
+//  Get handle by name
+//  The naming convention for ADS Variables are Prog.Varname
     if ( AdsSyncReadWriteReq(
             m_connect.pAddr,
             ADSIGRP_SYM_HNDBYNAME,
@@ -46,7 +48,8 @@ void AdsHandler<T>::connect(){
             sizeof( m_handle ),
             &m_handle,
             m_varname.size(),
-            (void*)(m_varname.c_str())) ){
+            (void*)(m_varname.c_str())
+        ) ){
         throw AdsHandleFailed("failed to handle variable");
     }
 }
