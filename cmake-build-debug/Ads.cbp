@@ -124,14 +124,17 @@
 		</Build>
 		<Unit filename="C:/Users/Cardi/CLionProjects/Ads/externals/includes/TcAdsAPI.h">
 			<Option target="Ads"/>
+			<Option target="main"/>
 		</Unit>
 		<Unit filename="C:/Users/Cardi/CLionProjects/Ads/externals/includes/TcAdsDef.h">
 			<Option target="Ads"/>
+			<Option target="main"/>
 		</Unit>
-		<Unit filename="C:/Users/Cardi/CLionProjects/Ads/externals/lib/TcAdsDll.lib">
+		<Unit filename="C:/Users/Cardi/CLionProjects/Ads/includes/AdsException.h">
 			<Option target="Ads"/>
+			<Option target="main"/>
 		</Unit>
-		<Unit filename="C:/Users/Cardi/CLionProjects/Ads/includes/Ads.h">
+		<Unit filename="C:/Users/Cardi/CLionProjects/Ads/includes/AdsHandler.h">
 			<Option target="Ads"/>
 			<Option target="main"/>
 		</Unit>
@@ -142,9 +145,8 @@
 		<Unit filename="C:/Users/Cardi/CLionProjects/Ads/main.cpp">
 			<Option target="main"/>
 		</Unit>
-		<Unit filename="C:/Users/Cardi/CLionProjects/Ads/srcs/Ads.cpp">
+		<Unit filename="C:/Users/Cardi/CLionProjects/Ads/srcs/AdsHandler.cpp">
 			<Option target="Ads"/>
-			<Option target="main"/>
 		</Unit>
 		<Unit filename="C:/Users/Cardi/CLionProjects/Ads/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

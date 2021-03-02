@@ -26,6 +26,8 @@ extern "C"
 {
 #endif
 
+#include "TcAdsDef.h"
+
 __declspec( dllexport )
 long __stdcall AdsGetDllVersion( void );
 

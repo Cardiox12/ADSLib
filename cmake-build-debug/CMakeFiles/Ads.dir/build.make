@@ -76,27 +76,27 @@ include CMakeFiles/Ads.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Ads.dir/flags.make
 
-CMakeFiles/Ads.dir/srcs/Ads.cpp.obj: CMakeFiles/Ads.dir/flags.make
-CMakeFiles/Ads.dir/srcs/Ads.cpp.obj: ../srcs/Ads.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cardi\CLionProjects\Ads\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Ads.dir/srcs/Ads.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Ads.dir\srcs\Ads.cpp.obj -c C:\Users\Cardi\CLionProjects\Ads\srcs\Ads.cpp
+CMakeFiles/Ads.dir/srcs/AdsHandler.cpp.obj: CMakeFiles/Ads.dir/flags.make
+CMakeFiles/Ads.dir/srcs/AdsHandler.cpp.obj: ../srcs/AdsHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cardi\CLionProjects\Ads\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Ads.dir/srcs/AdsHandler.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Ads.dir\srcs\AdsHandler.cpp.obj -c C:\Users\Cardi\CLionProjects\Ads\srcs\AdsHandler.cpp
 
-CMakeFiles/Ads.dir/srcs/Ads.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ads.dir/srcs/Ads.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Cardi\CLionProjects\Ads\srcs\Ads.cpp > CMakeFiles\Ads.dir\srcs\Ads.cpp.i
+CMakeFiles/Ads.dir/srcs/AdsHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ads.dir/srcs/AdsHandler.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Cardi\CLionProjects\Ads\srcs\AdsHandler.cpp > CMakeFiles\Ads.dir\srcs\AdsHandler.cpp.i
 
-CMakeFiles/Ads.dir/srcs/Ads.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ads.dir/srcs/Ads.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Cardi\CLionProjects\Ads\srcs\Ads.cpp -o CMakeFiles\Ads.dir\srcs\Ads.cpp.s
+CMakeFiles/Ads.dir/srcs/AdsHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ads.dir/srcs/AdsHandler.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Cardi\CLionProjects\Ads\srcs\AdsHandler.cpp -o CMakeFiles\Ads.dir\srcs\AdsHandler.cpp.s
 
 # Object files for target Ads
 Ads_OBJECTS = \
-"CMakeFiles/Ads.dir/srcs/Ads.cpp.obj"
+"CMakeFiles/Ads.dir/srcs/AdsHandler.cpp.obj"
 
 # External object files for target Ads
 Ads_EXTERNAL_OBJECTS =
 
-libAds.a: CMakeFiles/Ads.dir/srcs/Ads.cpp.obj
+libAds.a: CMakeFiles/Ads.dir/srcs/AdsHandler.cpp.obj
 libAds.a: CMakeFiles/Ads.dir/build.make
 libAds.a: CMakeFiles/Ads.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Cardi\CLionProjects\Ads\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libAds.a"

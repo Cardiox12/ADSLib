@@ -2,11 +2,12 @@
 // Created by Cardi on 3/1/2021.
 //
 
-#include "includes/Ads.h"
+#include "includes/AdsHandler.h"
 
 int     main()
 {
-    AdsInterface interface;
+    AdsHandler<bool> handle{ "In" };
 
+    handle.connect();
     return (0);
 }

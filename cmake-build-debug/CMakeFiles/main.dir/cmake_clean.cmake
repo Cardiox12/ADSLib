@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/main.dir/main.cpp.obj"
-  "CMakeFiles/main.dir/srcs/Ads.cpp.obj"
   "libmain.dll.a"
   "main.exe"
   "main.exe.manifest"

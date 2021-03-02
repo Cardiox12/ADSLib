@@ -182,35 +182,32 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-srcs/Ads.obj: srcs/Ads.cpp.obj
+srcs/AdsHandler.obj: srcs/AdsHandler.cpp.obj
 
-.PHONY : srcs/Ads.obj
+.PHONY : srcs/AdsHandler.obj
 
 # target to build an object file
-srcs/Ads.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ads.dir\build.make CMakeFiles/Ads.dir/srcs/Ads.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/srcs/Ads.cpp.obj
-.PHONY : srcs/Ads.cpp.obj
+srcs/AdsHandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ads.dir\build.make CMakeFiles/Ads.dir/srcs/AdsHandler.cpp.obj
+.PHONY : srcs/AdsHandler.cpp.obj
 
-srcs/Ads.i: srcs/Ads.cpp.i
+srcs/AdsHandler.i: srcs/AdsHandler.cpp.i
 
-.PHONY : srcs/Ads.i
+.PHONY : srcs/AdsHandler.i
 
 # target to preprocess a source file
-srcs/Ads.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ads.dir\build.make CMakeFiles/Ads.dir/srcs/Ads.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/srcs/Ads.cpp.i
-.PHONY : srcs/Ads.cpp.i
+srcs/AdsHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ads.dir\build.make CMakeFiles/Ads.dir/srcs/AdsHandler.cpp.i
+.PHONY : srcs/AdsHandler.cpp.i
 
-srcs/Ads.s: srcs/Ads.cpp.s
+srcs/AdsHandler.s: srcs/AdsHandler.cpp.s
 
-.PHONY : srcs/Ads.s
+.PHONY : srcs/AdsHandler.s
 
 # target to generate assembly for a file
-srcs/Ads.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ads.dir\build.make CMakeFiles/Ads.dir/srcs/Ads.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/srcs/Ads.cpp.s
-.PHONY : srcs/Ads.cpp.s
+srcs/AdsHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ads.dir\build.make CMakeFiles/Ads.dir/srcs/AdsHandler.cpp.s
+.PHONY : srcs/AdsHandler.cpp.s
 
 # Help Target
 help:
@@ -225,9 +222,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... srcs/Ads.obj
-	@echo ... srcs/Ads.i
-	@echo ... srcs/Ads.s
+	@echo ... srcs/AdsHandler.obj
+	@echo ... srcs/AdsHandler.i
+	@echo ... srcs/AdsHandler.s
 .PHONY : help
 
 

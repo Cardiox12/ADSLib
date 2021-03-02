@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Cardi/CLionProjects/Ads/srcs/Ads.cpp" "C:/Users/Cardi/CLionProjects/Ads/cmake-build-debug/CMakeFiles/Ads.dir/srcs/Ads.cpp.obj"
+  "C:/Users/Cardi/CLionProjects/Ads/srcs/AdsHandler.cpp" "C:/Users/Cardi/CLionProjects/Ads/cmake-build-debug/CMakeFiles/Ads.dir/srcs/AdsHandler.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

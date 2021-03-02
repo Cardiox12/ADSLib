@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Ads.dir/srcs/Ads.cpp.obj"
+  "CMakeFiles/Ads.dir/srcs/AdsHandler.cpp.obj"
   "libAds.a"
   "libAds.pdb"
 )
