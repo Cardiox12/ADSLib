@@ -21,11 +21,9 @@ class AdsHandler {
 public:
     AdsHandler(std::string varname) : m_varname{ varname } {};
 
-    void connect();
-
-    T &read();
-
-    void write(T data);
+    void    connect();
+    void    write(T data);
+    T       &read();
 };
 
 template<typename T>
@@ -59,7 +57,7 @@ T &AdsHandler<T>::read() {
 
 template<typename T>
 void AdsHandler<T>::write(T data) {
-    std::cout << "Writing ... " << std::endl;
+
 }
 
 #endif //ADS_HANDLER_H

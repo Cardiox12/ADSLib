@@ -17,7 +17,6 @@ public:
     };
 
     [[nodiscard]] const char *what() const noexcept override {
-        std::cout << "AdsConnectionFailed: " << m_message << std::endl;
         return (m_message.c_str());
     }
 };
@@ -31,7 +30,6 @@ public:
     };
 
     [[nodiscard]] const char *what() const noexcept override {
-        std::cout << "AdsHandleFailed: " << m_message << std::endl;
         return (m_message.c_str());
     }
 };
@@ -45,9 +43,21 @@ public:
     };
 
     [[nodiscard]] const char *what() const noexcept override {
-        std::cout << "AdsReadFailed: " << m_message << std::endl;
         return (m_message.c_str());
     }
+};
+
+class AdsWriteFailed : public std::exception {
+    std::string m_message;
+public:
+    explicit AdsWriteFailed(const std::string &message){
+        m_message = message;
+        std::cout << "AdsWriteFailed: " << message << std::endl;
+    };
+
+    [[nodiscard]] const char *what() const noexcept override {
+        return (m_message.c_str());
+    };
 };
 
 #endif //ADS_EXCEPTION_H
