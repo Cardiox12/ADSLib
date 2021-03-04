@@ -48,7 +48,7 @@ void AdsHandler<T>::connect(){
 template<typename T>
 T &AdsHandler<T>::read() {
 
-    if ( AdsSyncReadReq(m_connect.pAddr, ADSIGRP_SYM_VALBYHND, m_handle, sizeof( m_data ), &m_data ) ){
+    if ( AdsSyncReadReq( m_connect.pAddr, ADSIGRP_SYM_VALBYHND, m_handle, sizeof( m_data ), &m_data ) ){
         throw AdsReadFailed("reading variable from TwinCat3 failed");
     }
 
@@ -57,7 +57,9 @@ T &AdsHandler<T>::read() {
 
 template<typename T>
 void AdsHandler<T>::write(T data) {
-
+    if ( AdsSyncWriteReq( m_connect.pAddr, ADSIGRP_SYM_VALBYHND, m_handle, sizeof( data ), &data ) ){
+        throw AdsWriteFailed("writing variable to TwinCAT3 failed");
+    }
 }
 
 #endif //ADS_HANDLER_H

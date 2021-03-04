@@ -6,17 +6,20 @@
 
 int     main()
 {
-//    Naming convention for ADS Variables is PLC_PROG_NAME.PLC_VARNAME
     AdsHandler<bool> inHandle{ "MAIN.In" };
     AdsHandler<bool> outHandle{ "MAIN.Out" };
 
     try {
         inHandle.connect();
-        bool in = inHandle.read();
+        outHandle.connect();
 
-        std::cout << "In : " << in << std::endl;
-    } catch (const AdsHandleFailed &error){
-        std::cout << "Cannot get handle of In variable" << std::endl;
+        std::cout << "In : " << inHandle.read() << std::endl;
+        std::cout << "Out : " << outHandle.read() << std::endl;
+
+        inHandle.write(true);
+        outHandle.write(true);
+    } catch (std::exception &error){
+        std::cout << error.what() << std::endl;
     }
 
     return (0);
