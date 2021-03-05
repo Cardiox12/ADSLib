@@ -22,7 +22,7 @@ public:
     AdsHandler(std::string varname) : m_varname{ varname } {};
 
     void    connect();
-    void    write(T data);
+    void    write(T data, size_t size);
     T       &read();
 };
 
@@ -56,8 +56,8 @@ T &AdsHandler<T>::read() {
 }
 
 template<typename T>
-void AdsHandler<T>::write(T data) {
-    if ( AdsSyncWriteReq( m_connect.pAddr, ADSIGRP_SYM_VALBYHND, m_handle, sizeof( data ), &data ) ){
+void AdsHandler<T>::write(T data, size_t size) {
+    if ( AdsSyncWriteReq( m_connect.pAddr, ADSIGRP_SYM_VALBYHND, m_handle, size, data) ){
         throw AdsWriteFailed("writing variable to TwinCAT3 failed");
     }
 }

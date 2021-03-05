@@ -19,7 +19,7 @@ try {
     std::cout << "In : " << inHandle.read() << std::endl;
 
 //    Write variable to TwinCat3
-    inHandle.write(true);
+    inHandle.write(true, sizeof( bool ));
     
 //  Catch potential errors,
 //  ConnectionFailed, HandleFailed, ReadFailed, WriteFailed ...  

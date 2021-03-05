@@ -3,24 +3,32 @@
 //
 
 #include "includes/AdsHandler.h"
+#include <string>
 
 int     main()
 {
-    AdsHandler<bool> inHandle{ "MAIN.In" };
-    AdsHandler<bool> outHandle{ "MAIN.Out" };
+    AdsHandler<bool[2]> inHandle{ "MAIN.pressure" };
+    bool *pressure = new bool[2];
 
     try {
         inHandle.connect();
-        outHandle.connect();
 
-        std::cout << "In : " << inHandle.read() << std::endl;
-        std::cout << "Out : " << outHandle.read() << std::endl;
 
-        inHandle.write(true);
-        outHandle.write(true);
+        memcpy(pressure, inHandle.read(), sizeof(bool) * 2);
+
+        std::cout << "In : (" << pressure[0] << "," << pressure[1] << ")" << std::endl;
+
+        pressure[0] = true;
+        pressure[1] = false;
+
+        std::cout << "Out : (" << pressure[0] << "," << pressure[1] << ")" << std::endl;
+
+        inHandle.write(pressure, 2);
+
     } catch (std::exception &error){
         std::cout << error.what() << std::endl;
     }
 
+    delete[] pressure;
     return (0);
 }
