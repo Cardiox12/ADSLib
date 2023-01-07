@@ -1,7 +1,7 @@
 # AdsLib
 
 This project aims to create a facade for TC-ADS from Beckhoff and make it compatible with C++.
-The library use template to create generic handlers, that makes easy to create handlers.
+The library use template to create generic handlers.
 
 ### Example
 
